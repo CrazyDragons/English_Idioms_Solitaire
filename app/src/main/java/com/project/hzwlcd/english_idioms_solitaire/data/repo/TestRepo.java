@@ -1,5 +1,6 @@
 package com.project.hzwlcd.english_idioms_solitaire.data.repo;
 
+import com.project.hzwlcd.english_idioms_solitaire.base.PerActivity;
 import com.project.hzwlcd.english_idioms_solitaire.data.apis.TestApi;
 
 import javax.inject.Inject;
@@ -11,6 +12,7 @@ import javax.inject.Inject;
  * Time 10:22
  */
 
+@PerActivity
 public class TestRepo {
     private TestApi testApi;
     @Inject

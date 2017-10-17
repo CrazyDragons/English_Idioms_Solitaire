@@ -4,7 +4,7 @@ import com.project.hzwlcd.english_idioms_solitaire.base.PerActivity;
 import com.project.hzwlcd.english_idioms_solitaire.data.modules.TestModule;
 import com.project.hzwlcd.english_idioms_solitaire.di.modules.ActivityModule;
 
-import dagger.Component;
+import dagger.Subcomponent;
 
 /**
  * Project EnglishidiomsSolitaire/com.project.hzwlcd.englishidiomssolitaire.display.activity.Init/TestComponent
@@ -14,7 +14,7 @@ import dagger.Component;
  */
 
 @PerActivity
-@Component(modules = {ActivityModule.class, TestModule.class})
+@Subcomponent(modules = {ActivityModule.class, TestModule.class})
 public interface TestComponent {
     void inject(TestActivity testActivity);
 }
